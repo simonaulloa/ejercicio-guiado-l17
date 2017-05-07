@@ -20,7 +20,7 @@ function intersection(l1, l2){
 
 intersection([1,2,3,4], [3,4,5,6]);
 
-//*arreglo de objetos
+//*arreglo de objetos imperativo
 var productos =[
 {
 	nombre:'pillama',
@@ -53,3 +53,8 @@ for(var i=0; i<productos.length; i++){
 	  computadores.push(productos[i]);
 	}
 }
+
+//*forma declarativa
+var computadores = productos.filter(function (producto){
+	return producto.tipo === 'computador';
+});
