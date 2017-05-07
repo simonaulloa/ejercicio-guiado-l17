@@ -19,3 +19,37 @@ function intersection(l1, l2){
 };
 
 intersection([1,2,3,4], [3,4,5,6]);
+
+//*arreglo de objetos
+var productos =[
+{
+	nombre:'pillama',
+	tipo: 'ropa',
+},
+{
+	nombre:'nevera',
+	tipo: 'electrodomestico',
+},
+{
+	nombre:'asus',
+	tipo: 'computador',
+},
+{
+	nombre:'mackbook',
+	tipo: 'computador',
+},
+{
+	nombre:'pillama',
+	tipo: 'ropa',
+},
+{
+	nombre:'toshiba',
+	tipo: 'computador',
+},
+];
+var computadores = [];
+for(var i=0; i<productos.length; i++){
+	if(productos[i].tipo === 'computador'){
+	  computadores.push(productos[i]);
+	}
+}
